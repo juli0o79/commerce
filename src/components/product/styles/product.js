@@ -3,6 +3,7 @@ import styled from 'styled-components/macro'
 export const Container = styled.div`
 position: relative;
 display: flex;
+margin: auto;
 justify-content: center;
 align-items : center;
 flex-wrap: wrap;

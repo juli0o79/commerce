@@ -9,13 +9,21 @@ import {
 
 } from './styles/product'
 import VanillaTilt from 'vanilla-tilt';
+import { useEffect } from 'react/cjs/react.development';
 
 
 export default function Product({children, ...restProps}){
-    VanillaTilt.init(document.querySelectorAll(".tilt"), {
-		max: 25,
-		speed: 400
-	});
+
+    useEffect(
+        ()=>{
+            VanillaTilt.init(document.querySelectorAll(".tilt"), {
+                    max: 25,
+                    speed: 400
+                });
+        },[]
+    )
+
+    
     return(
         <Container>
             <Box className = "tilt">

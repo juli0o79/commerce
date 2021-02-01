@@ -14,8 +14,9 @@ export const GlobalStyles = createGlobalStyle`
         font-family:'Arimo', sans-serif;
         justify-content: center;
         width: 100%;
-        overflow-x: hidden;
         margin: 0px;
         background-color: #000;
+        
     }
+
 `

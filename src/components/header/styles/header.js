@@ -2,13 +2,15 @@ import styled from 'styled-components/macro'
 
 export const Section = styled.section`
     position: relative;
-    width: 100%;
-    height: 100%;;
+    margin: auto;
+    width: 1400px;
+    height: 1100px;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 30px;
+    margin-bottom: 50px;
 
     img{
         position: absolute;
@@ -21,15 +23,7 @@ export const Section = styled.section`
 
     }
 
-    &:before{
-        content: "";
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        height: 100px;
-        background: linear-gradient(to top, #000, transparent);
-        z-index: 10000;
-    }
+   
 
 
 `;
@@ -38,9 +32,13 @@ export const BackGround = styled.img`
 `;
 
 export const JustDoIt = styled.img`
+    position: relative;
+    transform: translateY(${({scroll}) => scroll + "px" })
 `;
 
 export const Shoes = styled.img`
+position: relative;
+    transform: translateY(${({scroll}) => "-" + scroll + "px" })
 `;
 
 export const Title = styled.h2`
